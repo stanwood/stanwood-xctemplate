@@ -6,11 +6,11 @@ module Stanwood
 
   def self.execute(argv)
     # @message_bank.prompt_error_message(argv[0])
-
-    puts "Testing stanwood gem " + argv[0]
-    puts "Testing stanwood gem " + argv[1]
-    puts argv[2]
-    #Stanwood::Configurator.new(argv).run
+    # 
+    # puts "Testing stanwood gem " + argv[0]
+    # puts "Testing stanwood gem " + argv[1]
+    # puts argv[2]
+    Stanwood::Configurator.new(argv).run
   end
 
   # Moce to messages file
