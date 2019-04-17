@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'stanwood'
+
+#puts ARGV[0]
+
+#puts ARGV.shift
+#puts ARGV.unshift
+#puts ARGV.count
+
+#Stanwood::Configurator.new(ARGV.shift)
+
+#(ARGV).run
+Stanwood.execute(ARGV)
