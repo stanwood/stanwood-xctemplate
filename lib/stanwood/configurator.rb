@@ -40,21 +40,7 @@ module Stanwood
 
     def decide_exectution()
       if @command == "create"
-
-        if @platforms.has_value?(@attribute)
-          puts "Creating a template ...." + @project_name
-          @message_bank.prompt_help_message(@project_name)
-        elsif @project_name == "--help"
-          @message_bank.prompt_help_message(@command)
-        elsif @platforms.has_value?(@project_name)
-          puts "Please include a PROJECT_NAME"
-          @message_bank.prompt_help_message(@command)
-        elsif @project_name.include? "--"
-          @message_bank.prompt_option_error_message(@project_name)
-        else
-          @message_bank.prompt_option_error_message(@attribute)
-        end
-
+        create()
       elsif @command == "--help"
         @message_bank.prompt_help_message("")
         @message_bank.parse_command_line("")
@@ -64,6 +50,21 @@ module Stanwood
         @message_bank.prompt_option_error_message(@command)
       else
         @message_bank.prompt_command_error_message(@command)
+      end
+    end
+
+    def create
+      if @platforms.has_value?(@attribute)
+        @project_creator.execute(@project_name, @attribute)
+      elsif @project_name == "--help"
+        @message_bank.prompt_help_message(@command)
+      elsif @platforms.has_value?(@project_name)
+        puts "Please include a PROJECT_NAME"
+        @message_bank.prompt_help_message(@command)
+      elsif @project_name.include? "--"
+        @message_bank.prompt_option_error_message(@project_name)
+      else
+        @message_bank.prompt_option_error_message(@attribute)
       end
     end
   end
