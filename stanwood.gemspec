@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.homepage      = "https://github.com/gems/stanwood-xctemplate"
 
   s.files         = `git ls-files`.split($/)
-  s.executables   = ['stanwood', 'oak']
+  s.executables   << 'stanwood'
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency 'colored2',       '~> 3.1'
