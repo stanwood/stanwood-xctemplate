@@ -14,8 +14,8 @@ module Stanwood
     attr_reader :project_name, :command, :message_bank, :platforms, :attribute, :project_creator
 
     def initialize(argv)
-      @project_name = argv[1]
       @command = argv[0]
+      @project_name = argv[1]
       @attribute = argv[2]
       @platforms = {
         "1" => "--ios",
@@ -41,6 +41,8 @@ module Stanwood
     def decide_exectution()
       if @command == "create"
         create()
+      elsif @command == "install"
+        install()
       elsif @command == "--help"
         @message_bank.prompt_help_message("")
         @message_bank.parse_command_line("")
@@ -53,7 +55,7 @@ module Stanwood
       end
     end
 
-    def create
+    def create()
       if @platforms.has_value?(@attribute)
         @project_creator.execute(@project_name, @attribute)
       elsif @project_name == "--help"
@@ -65,6 +67,16 @@ module Stanwood
         @message_bank.prompt_option_error_message(@project_name)
       else
         @message_bank.prompt_option_error_message(@attribute)
+      end
+    end
+
+    def install()
+      if @platforms.has_value?(@project_name)
+        @project_creator.executeTemplates(@project_name)
+      elsif @project_name == "--help"
+        @message_bank.prompt_help_message(@command)
+      else
+        @message_bank.prompt_option_error_message(@project_name)
       end
     end
   end

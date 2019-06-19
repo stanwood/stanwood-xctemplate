@@ -53,6 +53,8 @@ module Stanwood
         puts "Commands:".bold.underlined
         puts ""
         print "     + create".colorize(:light_green) + "                        Create a new project template"
+        puts ""
+        print "     + install".colorize(:light_green) + "                       Installs project templates"
         puts "\n"
       when command == "create"
         puts ""
@@ -60,6 +62,13 @@ module Stanwood
         puts ""
         puts "    $ stanwood " + "COMMAND".colorize(:light_green) + " PROJECT_NAME ".colorize(:light_blue) + "--PLATFORM".colorize(:light_green)
         puts "\n    Creates a stanwood project with predefined architecture components\n    named " + "`NAME`".colorize(:light_blue) + " according to our best practices."
+        puts "\n"
+      when command == "install"
+        puts ""
+        puts "Usage:".bold.underlined
+        puts ""
+        puts "    $ stanwood " + "COMMAND".colorize(:light_green) + " --PLATFORM".colorize(:light_green)
+        puts "\n    Installs stanwood module templates"
         puts "\n"
       end
     end
@@ -73,17 +82,17 @@ module Stanwood
         opt.separator "Options".bold.underlined
         opt.separator ''
 
-        opt.on('--ios', 'Create a new iOS template project') do
+        opt.on('--ios', 'Sets iOS platform attribue') do
           puts "\n🚀🚀🚀 We are working on this awesome feature. Stay tuned!!! 🚀🚀🚀\n\n"
           exit
         end
 
-        opt.on('--backend', 'Create a new Android template project') do
+        opt.on('--backend', 'Sets Android platform attribue') do
             puts "\n🚀🚀🚀 We are working on this awesome feature. Stay tuned!!! 🚀🚀🚀\n\n"
             exit
         end
 
-        opt.on('--android', 'Create a new API template project') do
+        opt.on('--android', 'Sets API platform attribue') do
             puts "\n🚀🚀🚀 We are working on this awesome feature. Stay tuned!!! 🚀🚀🚀\n\n"
             exit
         end
