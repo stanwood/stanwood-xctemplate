@@ -1,5 +1,7 @@
 # Stanwood
 
+[![Gem Version](https://badge.fury.io/rb/stanwood.svg)](https://badge.fury.io/rb/stanwood)
+
 // TODO
 
 ## Installation
