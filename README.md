@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/stanwood.svg)](https://badge.fury.io/rb/stanwood)
 
-// TODO
+stanwood Command line tool support stanwood architecture, generates base projects with boiler plate code, and necessary templates. 
 
 ## Installation
 
@@ -19,12 +19,31 @@ And then execute:
 
 Or install it yourself as:
 ```
-    $ gem install stanwood
+    $ sudo gem install stanwood
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+Usage:
+
+    $ stanwood COMMAND
+    Stanwood, the stanwood architecture template manager
+
+Commands:
+
+     + create                        Create a new project template
+     + install                       Installs project templates
+
+
+Options
+
+        --ios                        Sets iOS platform attribue
+        --backend                    Sets Android platform attribue
+        --android                    Sets API platform attribue
+    -v, --version                    Print version number
+    -h, --help                       Show help banner of specified command
+```
 
 ## Development
 
@@ -34,7 +53,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/stanwood. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/stanwood/stanwood. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Code of Conduct
 
