@@ -1,5 +1,10 @@
 require "stanwood/version"
+require 'colored2'
+require 'stanwood/configurator'
 
 module Stanwood
-  # Your code goes here...
+
+  def self.execute(argv)
+    Stanwood::Configurator.new(argv).run
+  end
 end
