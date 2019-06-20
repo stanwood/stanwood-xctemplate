@@ -39,3 +39,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## Code of Conduct
 
 Everyone interacting in the Stanwood project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/stanwood/blob/master/CODE_OF_CONDUCT.md).
+
+## Licence
+
+stanwood is under MIT licence. See the [LICENSE](https://github.com/stanwood/stanwood-xctemplate/blob/master/LICENSE.md) file for more info.
