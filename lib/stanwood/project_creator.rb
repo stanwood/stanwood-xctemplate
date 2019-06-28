@@ -5,7 +5,9 @@ module Stanwood
     def execute(project_name, platform)
       case
       when platform == "--ios"
-        # system("echo Cloning Xcode Template")
+        puts "\n🚀🚀🚀"
+        system("ls")
+        system("sh /Users/talzion/Stanwood/stanwood-xctemplate/lib/stanwood/create.sh " + project_name)
         # system("git clone git@github.com:stanwood/Xcode_Templates_iOS.git /echo tmp/xcode_template")
         #
         # system("Running...")
@@ -13,7 +15,7 @@ module Stanwood
         #
         # system("echo Finishing installation")
         # system("rm -rf /tmp/xcode_template")
-        puts "\n🚀🚀🚀 We are working on this awesome feature for iOS. Stay tuned!!! 🚀🚀🚀\n\n"
+        puts "\n🚀🚀🚀"
         exit
       when platform == "--backend"
         puts "\n🚀🚀🚀 We are working on this awesome feature for Backend. Stay tuned!!! 🚀🚀🚀\n\n"
