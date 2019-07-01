@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/stanwood.svg)](https://badge.fury.io/rb/stanwood)
 
-// TODO
+stanwood Command line tool support stanwood architecture, generates base projects with boiler plate code, and necessary templates. 
 
 ## Installation
 
@@ -19,7 +19,7 @@ And then execute:
 
 Or install it yourself as:
 ```
-    $ gem install stanwood
+    $ sudo gem install stanwood
 ```
 
 ## Usage
@@ -51,8 +51,12 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/stanwood. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/stanwood/stanwood. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Code of Conduct
 
 Everyone interacting in the Stanwood project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/stanwood/blob/master/CODE_OF_CONDUCT.md).
+
+## Licence
+
+stanwood is under MIT licence. See the [LICENSE](https://github.com/stanwood/stanwood-xctemplate/blob/master/LICENSE.md) file for more info.
