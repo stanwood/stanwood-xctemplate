@@ -6,15 +6,8 @@ module Stanwood
       case
       when platform == "--ios"
         puts "\n🚀🚀🚀"
-        system("ls")
-        system("sh /Users/talzion/Stanwood/stanwood-xctemplate/lib/stanwood/create.sh " + project_name)
-        # system("git clone git@github.com:stanwood/Xcode_Templates_iOS.git /echo tmp/xcode_template")
-        #
-        # system("Running...")
-        # system("chmod +x ruby /tmp/xcode_template/Template/configure ", project_name)
-        #
-        # system("echo Finishing installation")
-        # system("rm -rf /tmp/xcode_template")
+        path = File.join(__dir__, 'create.sh')
+        system("sh " + path + " " + project_name)
         puts "\n🚀🚀🚀"
         exit
       when platform == "--backend"
