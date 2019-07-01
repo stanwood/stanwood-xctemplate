@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.email         = ["talezion@gmail.com"]
   s.license       = "MIT"
   s.summary       = "The STANWOOD Architecture Templates"
-  s.description   = "STANWOOD manages stanwood related tempalte to support our architecture"
-  s.homepage      = "https://github.com/gems/stanwood-xctemplate"
+  s.description   = "STANWOOD manages stanwood related templates to support our architecture"
+  s.homepage      = "https://github.com/stanwood/stanwood-xctemplate/"
 
   s.files         = `git ls-files`.split($/)
   s.executables   << 'stanwood'
