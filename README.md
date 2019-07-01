@@ -24,8 +24,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+**Usage:**
+```
+    $ stanwood COMMAND
+    Stanwood, the stanwood architecture template manager
+```
+**Commands:**
+```
+     + create                        Create a new project template
+     + install                       Installs project templates
+```
 
+**Options:**
+```
+        --ios                        Sets iOS platform attribue
+        --backend                    Sets Android platform attribue
+        --android                    Sets API platform attribue
+    -v, --version                    Print version number
+    -h, --help                       Show help banner of specified command
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
