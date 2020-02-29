@@ -22,6 +22,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'colorize',       '~> 0.8.1'
 
   s.add_development_dependency "bundler", "~> 1.16"
-  s.add_development_dependency "rake", "~> 10.0"
+  s.add_development_dependency "rake", "~> 13.0"
   s.add_development_dependency "rspec", "~> 3.0"
 end
